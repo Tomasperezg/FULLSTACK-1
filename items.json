@@ -1,0 +1,26 @@
+[{
+	"id": 1,
+	"product": "iphone",
+	"price": 700,
+	"quantity": 1
+}, {
+	"id": 2,
+	"product": "LG smart TV",
+	"price": 1000,
+	"quantity": 1
+}, {
+	"id": 3,
+	"product": "HP Computer",
+	"price": 1200,
+	"quantity": 1
+}, {
+	"id": 4,
+	"product": "note books pack",
+	"price": 10,
+	"quantity": 20
+}, {
+	"id": 5,
+	"product": "water bottle",
+	"price": 0.75,
+	"quantity": 1
+}]

@@ -1,12 +1,15 @@
 const express = require("express");
 let shopRoutes = express.Router();
+let items = require("./items.json");
 
-shopRoutes.get("/item", (req, res) => {
-  res.send("here i am! i am get request!");
+shopRoutes.get("/items", (req, res) => {
+  // const id = req.params.id;
+  console.log("the get request is working");
+  res.send(items);
 });
 
 shopRoutes.post("/item", (req, res) => {
-  res.send("here i am! i am a post request!");
+  res.send("later, this will add anew item to the list");
 });
 
 shopRoutes.put("/item", (req, res) => {
