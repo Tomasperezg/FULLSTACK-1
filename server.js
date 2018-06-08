@@ -4,7 +4,7 @@ const routes = require("./routes.js");
 
 
 app.use(express.static(__dirname + "/public"));//<--this is calling public folder(regular html,css,js)
-app.use("/", routes);
+app.use("/", routes);//<--hosting a server with API functionality 
 
 
 let port = 5000

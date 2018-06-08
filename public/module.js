@@ -1,5 +1,5 @@
 "use strict";
 {
   angular
-    .module("shopingCart", ["ngRoute"]);
+    .module("shopingCart", []);
 }
