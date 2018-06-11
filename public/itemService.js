@@ -10,16 +10,27 @@
     }).then(function(response){
       // console.log(response);
       items = response.data;
-      return items
+      return items;
     });
   };
-  return{
+  const addItems = (newItems) => {
+    return $http({
+      url: "/api/items",
+      method: "POST",
+      data: newItems
+    }).then((response) => {
+      return response.data;
+    });
+  };
+  return {
      getItems
+     // addItems
    };
  }
-   itemService.$inject = ["http"];
+   itemService.addItems({id:8,product:"tapioca",price: 3.22, quantity:2});
+   itemService.$inject = ["$http"];
 
   angular
-    .module("app")
+    .module("shopingCart")
     .factory("itemService", itemService);
 }
